@@ -1,0 +1,102 @@
+
+long_click("picture1.jpg") 5.0907 4.4826
+slide("picture1.jpg") 3.7436 5.5466 0.8363 3.2509
+double_click("picture1.jpg") -1.689 5.1316
+slide("picture1.jpg") 3.7436 5.5466 0.8363 3.2509
+click("picture1.jpg") -0.9415 0.8241
+click("picture1.jpg") -5.4291 1.881
+double_click("picture1.jpg") 5.9162 4.7882
+click("picture1.jpg") -0.5098 3.6482
+long_click("picture1.jpg") 0.4297 2.9296
+slide("picture1.jpg") 3.7436 5.5466 0.8363 3.2509
+click("picture1.jpg") -7.2742 4.7233
+slide("picture1.jpg") -1.7464 5.1823 -2.3703 3.9303
+slide("picture1.jpg") 2.254 3.2051 -4.4773 0.9339
+long_click("picture1.jpg") 0.3462 6.8302
+click("picture1.jpg") 5.6892 3.3417
+double_click("picture1.jpg") 0.2536 0.9866
+click("picture1.jpg") 3.3521 5.3213
+click("picture1.jpg") -2.6032 1.2353
+double_click("picture1.jpg") 2.8724 5.5448
+double_click("picture1.jpg") 2.8323 5.7513
+click("picture1.jpg") -7.2742 4.7233
+slide("picture1.jpg") 3.2727 5.6267 -4.7845 4.9513
+long_click("picture1.jpg") 5.079 3.5154
+long_click("picture1.jpg") 1.1597 4.8044
+slide("picture1.jpg") -2.8555 6.2628 -6.3479 3.2391
+slide("picture1.jpg") 0.3944 6.1062 -6.5717 5.9399
+slide("picture1.jpg") 6.0436 6.7946 -4.8908 6.0457
+click("picture1.jpg") 2.4736 2.5946
+slide("picture1.jpg") 5.2696 5.9459 4.327 4.3367
+long_click("picture1.jpg") 6.0215 2.6637
+click("picture1.jpg") -7.2742 4.7233
+double_click("picture1.jpg") 2.3517 6.8192
+slide("picture1.jpg") 2.6447 5.6288 0.8377 2.5139
+double_click("picture1.jpg") 0.4228 2.1932
+double_click("picture1.jpg") 0.8714 2.227
+click("picture1.jpg") 5.8254 1.2316
+slide("picture1.jpg") -1.7557 6.5874 -3.5567 2.1193
+slide("picture1.jpg") 6.0663 5.9718 -0.2808 4.5486
+click("picture1.jpg") 5.1038 6.6207
+double_click("picture1.jpg") -4.2382 1.0239
+click("picture1.jpg") -7.2742 4.7233
+slide("picture1.jpg") 5.7336 4.2792 1.9755 2.2384
+click("picture1.jpg") -5.6258 3.9498
+double_click("picture1.jpg") 6.1334 4.5955
+click("picture1.jpg") -3.0101 3.9028
+click("picture1.jpg") -0.3586 5.6309
+long_click("picture1.jpg") -3.7399 2.4088
+click("picture1.jpg") 2.2714 2.7734
+click("picture1.jpg") -1.2451 2.8699
+double_click("picture1.jpg") 5.3794 2.0935
+click("picture1.jpg") -7.2742 4.7233
+slide("picture1.jpg") -6.5507 4.3719 -6.7642 1.7648
+click("picture1.jpg") -3.774 5.8213
+double_click("picture1.jpg") -5.3068 1.2478
+double_click("picture1.jpg") 0.157 4.3692
+click("picture1.jpg") -1.3532 5.2022
+long_click("picture1.jpg") -5.4463 6.7839
+long_click("picture1.jpg") -3.5647 3.7691
+double_click("picture1.jpg") 3.3231 3.715
+long_click("picture1.jpg") 1.9765 5.8603
+click("picture1.jpg") -7.2742 4.7233
+click("picture1.jpg") 2.5854 3.3137
+slide("picture1.jpg") -4.3093 5.3104 -5.2225 1.5446
+double_click("picture1.jpg") 5.9588 3.7214
+slide("picture1.jpg") -3.8312 5.4851 -6.1332 2.523
+click("picture1.jpg") -4.5522 0.8582
+click("picture1.jpg") -2.3546 4.6234
+click("picture1.jpg") -1.1926 3.5829
+click("picture1.jpg") 2.9173 6.2936
+slide("picture1.jpg") -6.3074 1.8071 -6.3314 1.7239
+click("picture1.jpg") -7.2742 4.7233
+click("picture1.jpg") -3.1713 2.5967
+slide("picture1.jpg") 2.4559 6.8214 -6.5937 4.1113
+long_click("picture1.jpg") 1.4165 3.3446
+click("picture1.jpg") 1.1213 2.7524
+long_click("picture1.jpg") -3.972 1.398
+click("picture1.jpg") 3.1281 5.2249
+slide("picture1.jpg") 4.6111 6.0926 -1.5425 3.1058
+double_click("picture1.jpg") 1.8351 3.6249
+slide("picture1.jpg") -4.2125 5.3431 -5.1964 4.1769
+click("picture1.jpg") -7.2742 4.7233
+double_click("picture1.jpg") -2.9151 2.1094
+long_click("picture1.jpg") 1.5876 6.2401
+slide("picture1.jpg") 3.4785 5.4749 -2.9568 4.0419
+double_click("picture1.jpg") 3.8247 5.2223
+double_click("picture1.jpg") 5.2339 5.4301
+long_click("picture1.jpg") -3.1009 1.3754
+double_click("picture1.jpg") 4.421 1.2537
+double_click("picture1.jpg") -5.9497 1.7353
+double_click("picture1.jpg") 2.4303 5.1414
+click("picture1.jpg") -7.2742 4.7233
+double_click("picture1.jpg") 1.1312 1.4139
+double_click("picture1.jpg") -1.1031 3.1688
+long_click("picture1.jpg") 4.837 5.7666
+click("picture1.jpg") -2.3652 3.658
+slide("picture1.jpg") -5.3971 2.2361 -6.019 2.1218
+double_click("picture1.jpg") -5.7959 2.9077
+click("picture1.jpg") -6.0678 6.41
+double_click("picture1.jpg") -2.2166 5.0804
+double_click("picture1.jpg") -2.5795 1.7495
+click("picture1.jpg") -7.2742 4.7233

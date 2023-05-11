@@ -1,5 +1,5 @@
 """
-用于设置连接机械臂的参数
+Used to set the parameters of the connected robot arm
 """
 import paramiko
 

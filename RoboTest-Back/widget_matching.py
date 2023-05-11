@@ -1,5 +1,5 @@
 """
-用于匹配屏幕点击处所在的控件
+Used to match the control where the screen is clicked
 """
 import cv2
 
@@ -10,9 +10,9 @@ def match_widget(coordinate, img_path, color=(0, 0, 255)):
     imgContour = image.copy()
     checkContour = image.copy()
 
-    imgGray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)  # 转灰度图
-    imgBlur = cv2.GaussianBlur(imgGray, (5, 5), 1)  # 高斯模糊
-    imgCanny = cv2.Canny(imgBlur, 5, 50)  # Canny算子边缘检测
+    imgGray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    imgBlur = cv2.GaussianBlur(imgGray, (5, 5), 1)
+    imgCanny = cv2.Canny(imgBlur, 5, 50)
     img_, contours, hierarchy = cv2.findContours(imgCanny, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
 
     contours_list = []
@@ -21,9 +21,9 @@ def match_widget(coordinate, img_path, color=(0, 0, 255)):
 
     for obj in contours:
         obj = cv2.convexHull(obj)
-        perimeter = cv2.arcLength(obj, True)  # 计算轮廓周长
-        approx = cv2.approxPolyDP(obj, 0.01 * perimeter, True)  # 获取轮廓角点坐标
-        x, y, w, h = cv2.boundingRect(approx)  # 获取矩形左上角坐标值和宽度、高度
+        perimeter = cv2.arcLength(obj, True)
+        approx = cv2.approxPolyDP(obj, 0.01 * perimeter, True)
+        x, y, w, h = cv2.boundingRect(approx)
         if w < 0.5 * h or w > 1.5 * h:
             continue
 
@@ -47,7 +47,7 @@ def match_widget(coordinate, img_path, color=(0, 0, 255)):
         # if area < 20000 or area > 420000:
         #     continue
         contours_list.append(obj)
-        # cv2.rectangle(imgContour, (x, y), (x + w, y + h), color, 2)  # 绘制边界框
+        # cv2.rectangle(imgContour, (x, y), (x + w, y + h), color, 2)
         # print("area: ", area)
 
     clean_rectangle_list = []
@@ -71,7 +71,7 @@ def match_widget(coordinate, img_path, color=(0, 0, 255)):
     for rectangle in rectangle_list:
         if rectangle[2] < 10 or rectangle[3] < 10 or rectangle[2] > 100 or rectangle[3] > 100:
             continue
-        checkContour = cv2.rectangle(checkContour, (rectangle[0], rectangle[1]), (rectangle[0] + rectangle[2], rectangle[1] + rectangle[3]), color, 2)  # 绘制边界框
+        checkContour = cv2.rectangle(checkContour, (rectangle[0], rectangle[1]), (rectangle[0] + rectangle[2], rectangle[1] + rectangle[3]), color, 2)
 
     # cv2.imshow("Original img", image)
     # cv2.imshow("shape Detection", imgContour)
