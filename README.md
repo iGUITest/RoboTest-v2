@@ -58,30 +58,45 @@
 ### Script Recording
 
 __step 0__: Execute _clear_environment.py_ to clear the temporary files left over from the last experiment.
+
 __step 1__: The backend service of RoboTest and the one of the robotic arm have been successfully started.
+
 __step 2__: Select _Start Recording_ in the front-end _Test Recording_, specify a _Script Name_ (we assume it is named _1_), RoboTest will generate a _1.robo_ folder under the _script_ directory, and generate a _1.txt_ in this folder to record the user's instructions to the robotic arm. 
+
 __step 3__: RoboTest will call _take_screenshot.py_ to take a picture of the current device and correct and sharpen it. The processed picture will be stored in the _image/input_ directory in order.
+
 __step 4__: RoboTest calls _screen_recognition.py_ to perform screen recognition on the device picture in _image/input_, and save the screenshot in the _image/output_ directory and in the _1.robo_ directory.
+
 __step 5__: RoboTest displays the recognized screenshot on the front-end interface. Users preform __click__, __double\_click__, __long\_click__, or __slide__ operations on the screenshot, and RoboTest calls _atom\_operation.py_ to perform corresponding robotic arm atomic operations, and generates the control instruction in the _control_ directory. RoboTest writes the control instruction into the _1.txt_ file in the _1.robo_ directory.
+
 __step 6__: Repeat steps from __step 3__ to __step 5__.
 
 ### Script Replaying
 
 __step 0__: Execute _clear_environment.py_ to clear the temporary files left over from the last experiment.
+
 __step 1__: The backend service of RoboTest and the one of the robotic arm have been successfully started.
+
 __step 2__: Select _Test Replaying_ on the front-end interface, click _Choose Script_, and select the script file to be replayed(using _1.txt_ int the _1.robo_ directory as an example).
+
 __step 3__: RoboTest will replay step by step based on the control instructions and corresponding screenshots in the _1.robo_ directory. The coordinates or widgets on the new device will be confirmed according to the method provided in _scale\_coordinate.py_ or _widget\_matching.py_. After all replay steps are completed, RoboTest will end the replay.
 
 ### Auto Exploration
 
 __step 0__: Execute _clear_environment.py_ to clear the temporary files left over from the last experiment.
+
 __step 1__: The backend service of RoboTest and the one of the robotic arm have been successfully started.
+
 __step 2__: Select _Auto Exploration_ on the front-end interface, click _Create the auto exploration script_ and set _Execute exploration times_, _bottom left coordinates_ and _top right coordinates_. RoboTest will generate the corresponding script file under the _monkey.robo_ directory according to the set parameters, and at the same time, the front-end page will jump to _Test Replaying_.
+
 __step 3__: Click _Choose Script_, and choose _monkey.txt_ in the _monkey.robo_ directory to be replayed. RoboTest performs auto exploration operations by calling _auto\_explore.py_, and the control instructions and screenshots corresponding to each operation step will be stored in the _explore.robo_ directory. The user can modify the call strategy in _auto\_explore.py_, and the call strategies that can be modified are written in _scheduling\_strategy.py_.
 
 ### Notch Detection
 
 __step 0__: Execute _clear_environment.py_ to clear the temporary files left over from the last experiment.
+
 __step 1__: The backend service of RoboTest and the one of the robotic arm have been successfully started.
+
 __step 2__: Execute the auto exploration, the corresponding control instructions and screenshots will be stored in the _explore.robo_ directory, suspend the automatic exploration, and perform cross-device script replay on the generated auto exploration script, and detect whether there is a UI occlusion problem with the special-shaped screen by calling _notch_check.py_.
+
 __step 3__: _notch_check.py_ compares the execution results of the same instruction on different devices by calling _cal_similarity.py_. If the image similarity is lower than the threshold, it will be considered that the UI occlusion problem of the special-shaped screen has occurred.
